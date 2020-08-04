@@ -84,6 +84,11 @@ body {
 	padding: 0 6px;
 }
 
+.btn-primary {
+	background-color: #37A6CD;
+	border-color: #37A6CD;
+}
+
 .center {
 	text-align: center;
 }
