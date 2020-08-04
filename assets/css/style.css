@@ -200,3 +200,7 @@ pre {
   white-space: pre-wrap;
   padding: 9.5px;
 }
+
+text {
+	white-space: pre-wrap;
+}
