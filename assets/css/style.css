@@ -204,3 +204,7 @@ pre {
 text {
 	white-space: pre-wrap;
 }
+
+.table-vertical-center > tbody > tr > td {
+	vertical-align: middle;
+}
