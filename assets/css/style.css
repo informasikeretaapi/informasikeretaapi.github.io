@@ -234,3 +234,16 @@ text {
 .label-success {
   background-color: #28A745;
 }
+
+.btn-collapse {
+	background: #37a6cd;
+	color: #fff;
+	text-decoration: none;
+	box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.2),inset -1px -1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.2),inset -1px -1px 1px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.2),inset -1px -1px 1px rgba(0, 0, 0, 0.2);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
