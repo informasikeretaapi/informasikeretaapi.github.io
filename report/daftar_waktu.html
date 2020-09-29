@@ -5,21 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TRAINPLAN - Informasi Kereta Api</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- BOOTSTRAP STYLES-->
+    <!-- BOOTSTRAP STYLES-->
     <link href="../assets/css/bootstrap.css" rel="stylesheet"/>
-     <!-- FONTAWESOME STYLES-->
+    <!-- FONTAWESOME STYLES-->
     <link href="../assets/css/font-awesome.css" rel="stylesheet"/>
-        <!-- CUSTOM STYLES-->
+    <!-- CUSTOM STYLES-->
     <link href="../assets/css/custom.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link href="../assets/css/login.css" rel="stylesheet"/>
     <!-- GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <!-- Icon -->
     <link rel="shortcut icon" href="../assets/img/icon.ico">
-    <!-- REDIRECT -->
-    <meta http-equiv="refresh" content="1;url=../index.html">
+    <style type="text/css">
+        input[type=text], input[type=password] {
+            width: 80%;
+        }
+        button {
+            width: 90%
+        }
+    </style>
 </head>
-<body id="penetapan">
+<body id="penetapan" onload="document.getElementById('id01').style.display='block'" style="width:auto;">
+    <div id="id01" class="modal">
+      <form class="modal-content animate" action="main.html" id="myForm" onsubmit=" return validasi()">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="../assets/img/icon.ico" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="username" required>
+          <br>
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" required>
+          <button type="submit">Login</button>
+          <!-- <input type="checkbox" checked="checked"> Remember me -->
+        </div>
+        <!-- <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div> -->
+      </form>
+    </div>
 	<div class="penetapan">
 		<div id="wrapper">
 			<div id="content">
@@ -3764,6 +3792,22 @@
                 "info": true,
             });
         });
+        function validasi(){
+            var username = document.forms["myForm"]["username"].value;
+            var password = document.forms["myForm"]["password"].value;
+            if( username == "IKA" && password == "$tr41npl4nnol8nol4satu9"){
+              alert("Informasi yang disampaikan hanya ditujukan kepada penerima sebagaimana dimaksud pada tujuan informasi tersebut. Kalian tidak diperkenankan untuk memanfaatkan, menyebarkan, mendistribusikan, dan menggandakan informasi tersebut. Dan tidak serta merta mencerminkan pandangan IKA.");
+              return true;
+            }
+            else if(username =="" || password ==""){
+              alert("Masukkan username dan password Anda");
+              return false;
+            }
+            else{
+              alert("Username atau password yang Anda masukan salah");
+              return false;
+            }
+          }
     </script>
       <!-- CUSTOM SCRIPTS -->
     <script src="../assets/js/custom.js"></script>
