@@ -11,10 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <!-- ICON -->
     <link rel="shortcut icon" href="assets/img/icon.ico">
+    <style type="text/css">
+      .center {
+        text-align: center;
+      }
+    </style>
 </head>
-<body>
-<h2>TRAINPLAN - Informasi Kereta Api</h2>
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<body onload="document.getElementById('id01').style.display='block'">
+<h2 class="center">TRAINPLAN - Informasi Kereta Api | LOGIN</h2>
 <div id="id01" class="modal">
   <form class="modal-content animate" action="main.html" id="myForm" onsubmit=" return validasi()">
     <div class="imgcontainer">
