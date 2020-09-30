@@ -108,7 +108,6 @@
     <script type="text/javascript">
         function idleLogout() {
             var t;
-            window.onload = resetTimer;
             window.onmousemove = resetTimer;
             window.onmousedown = resetTimer;  // catches touchscreen presses as well      
             window.ontouchstart = resetTimer; // catches touchscreen swipes as well 
@@ -118,7 +117,7 @@
 
             function yourFunction() {
                 // your function for too long inactivity goes here
-                window.location.href = '../logout.html';
+                window.location.href = 'logout.html';
             }
 
             function resetTimer() {
