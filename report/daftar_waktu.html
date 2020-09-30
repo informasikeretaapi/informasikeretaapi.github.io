@@ -3494,8 +3494,8 @@
                                     <td>Argo Parahyangan</td>
                                     <td></td>
                                     <td>KA ARGO</td>
-                                    <td>BD - GMR</td>
-                                    <td></td>
+                                    <td>KAC - GMR</td>
+                                    <td>173.976</td>
                                     <td></td>
                                     <td></td>
                                     <td class="center">
@@ -3509,7 +3509,7 @@
                                     <td></td>
                                     <td>KA ARGO</td>
                                     <td>GMR - KAC</td>
-                                    <td></td>
+                                    <td>173.976</td>
                                     <td></td>
                                     <td></td>
                                     <td class="center">
@@ -3565,7 +3565,7 @@
                                     <td></td>
                                     <td>KA ARGO</td>
                                     <td>BD - GMR</td>
-                                    <td></td>
+                                    <td>173.976</td>
                                     <td></td>
                                     <td></td>
                                     <td class="center">
@@ -3986,6 +3986,27 @@
                 "info": true,
             });
         });
+        function idleLogout() {
+            var t;
+            window.onload = resetTimer;
+            window.onmousemove = resetTimer;
+            window.onmousedown = resetTimer;  // catches touchscreen presses as well      
+            window.ontouchstart = resetTimer; // catches touchscreen swipes as well 
+            window.onclick = resetTimer;      // catches touchpad clicks as well
+            window.onkeypress = resetTimer;   
+            window.addEventListener('scroll', resetTimer, true); // improved; see comments
+
+            function yourFunction() {
+                // your function for too long inactivity goes here
+                window.location.href = '../logout.html';
+            }
+
+            function resetTimer() {
+                clearTimeout(t);
+                t = setTimeout(yourFunction, 1000);  // time is in milliseconds
+            }
+        }
+        idleLogout();
     </script>
       <!-- CUSTOM SCRIPTS -->
     <script src="../assets/js/custom.js"></script>

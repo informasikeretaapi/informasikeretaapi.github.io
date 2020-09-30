@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TRAINPLAN - Informasi Kereta Api</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link href="assets/css/login.css" rel="stylesheet"/>
+    <link href="assets/css/login.css" rel="stylesheet"/>
+    <!-- GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <!-- ICON -->
+    <link rel="shortcut icon" href="assets/img/icon.ico">
+    <style type="text/css">
+      .main {
+        text-align: center;
+        color: salmon;
+      }
+    </style>
+</head>
+<body id="penetapan" onload="document.getElementById('id01').style.display='block'" style="width:auto;">
+    <div id="id01" class="modal">
+      <form class="modal-content animate" action="index.html" id="myForm" onsubmit=" return validasi()">
+        <div class="imgcontainer">
+          <img src="assets/img/icon.ico" alt="Avatar" class="avatar">
+        </div>
+        <div class="main container">
+          <strong>Who0ps!</strong>
+          <br>
+          <strong>Logged out berhasil</strong>
+          <br>
+          <strong>Terima kasih telah menggunakan Trainplan</strong>
+          <br>
+          <strong>Informasi Kereta APi (IKA)</strong>
+          <button type="submit"><a href="index.html"></a>Re-Login</button>
+        </div>
+      </form>
+    </div>
+	<!-- <script>
+        $(document).ready(function () {
+            $('#dataTables-example').dataTable( {
+                "info": true,
+            });
+        });
+        function validasi(){
+            var username = document.forms["myForm"]["username"].value;
+            var password = document.forms["myForm"]["password"].value;
+            if( username == "IKA" && password == "$tr41npl4nnol8nol4satu9"){
+              alert("Informasi yang disampaikan hanya ditujukan kepada penerima sebagaimana dimaksud pada tujuan informasi tersebut. Kalian tidak diperkenankan untuk memanfaatkan, menyebarkan, mendistribusikan, dan menggandakan informasi tersebut. Dan tidak serta merta mencerminkan pandangan IKA.");
+              return true;
+            }
+            else if(username =="" || password ==""){
+              alert("Masukkan username dan password Anda");
+              return false;
+            }
+            else{
+              alert("Username atau password yang Anda masukan salah");
+              return false;
+            }
+          }
+    </script> -->
+</body>
+</html>
