@@ -264,3 +264,10 @@ text {
 .table-primary tbody tr:nth-child(2n+1) td, .table-primary tbody tr:nth-child(2n+1) th {
     background: #fff;
 }
+
+.btn-theme {
+    color: #ffffff;
+    background-color: #37a6cd;
+    border-color: #37a6cd;
+    font-weight: 700;
+}
