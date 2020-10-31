@@ -271,3 +271,7 @@ text {
     border-color: #37a6cd;
     font-weight: 700;
 }
+
+.btn-collapse {
+    padding: 8px 15px;
+}
