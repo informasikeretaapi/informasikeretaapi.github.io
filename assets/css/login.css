@@ -17,13 +17,15 @@ input[type=text], input[type=password] {
 }
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
-    color: white;
+    color: #fff;
+    background-color: #0069D9;
+    border-color: #0062CC;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
+    font-family: 'Open Sans', sans-serif;
 }
 button:hover {
     opacity: 0.8;
@@ -42,9 +44,9 @@ button:hover {
 }
 img.avatar {
     width: 10%;
-
     border-radius: 50%;
 }
+
 .container {
     padding: 16px;
 }
@@ -117,5 +119,12 @@ a:visited {
     }
     .cancelbtn {
        width: 100%;
+    }
+}
+
+@media screen (min-width: 300px) {
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
     }
 }
