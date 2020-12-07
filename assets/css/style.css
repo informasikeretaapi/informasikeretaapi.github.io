@@ -143,6 +143,15 @@ body {
 	display: block;
 }
 
+.detail-dok {
+	font-size: 12px;
+	background-color: #37A6CD;
+	color: #FFF;
+	border-radius: 4px;
+	padding-bottom: 2px 0 2px 0;
+	display: block;
+}
+
 /*Menubar*/
 .menubar {
 	height: 34px;
@@ -275,4 +284,134 @@ text {
 
 .btn-collapse {
     padding: 8px 15px;
+}
+
+.pengumuman {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+}
+
+.well {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset, 0 2px 2px rgba(0, 0, 0, 0.1) inset, 0 0 0 1px rgba(255, 255, 255, 0.9) inset, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset, 0 2px 2px rgba(0, 0, 0, 0.1) inset, 0 0 0 1px rgba(255, 255, 255, 0.9) inset, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset,0 2px 2px rgba(0, 0, 0, 0.1) inset,0 0 0 1px rgba(255, 255, 255, 0.9) inset,0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    border: none;
+    z-index: 1;
+    position: relative;
+    -webkit-border-radius: 0 0 0 0;
+    -moz-border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0;
+    background: #fafafa;
+}
+
+.btn-group-vertical.block {
+    display: block;
+}
+
+.btn-group>.btn, .btn-group>.dropdown-menu {
+    font-size: 13px;
+}
+.glyphicons.btn-icon {
+    padding: 5px 7px 5px 40px;
+}
+.btn-block.count {
+    text-align: left;
+}
+
+.btn-block.count span {
+    float: right;
+    font-size: 18px;
+}
+
+.btn-default {
+    background: #f4f4f4;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid #dcdcdc;
+    border-top-color: rgb(220, 220, 220);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(220, 220, 220);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(220, 220, 220);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(220, 220, 220);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+    color: rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 0 #fff;
+    font-weight: 600;
+}
+
+.widget {
+    background: #fff;
+    margin: 0 auto 10px;
+    position: static;
+}
+
+.widget.widget-4 .widget-head {
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0), inset -1px -1px 1px rgba(0, 0, 0, 0);
+    -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0),inset -1px -1px 1px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0), inset -1px -1px 1px rgba(0, 0, 0, 0);
+    background: #fff;
+    border: none;
+    border-bottom: 5px solid #eeeeee;
+    height: 25px;
+    line-height: 25px;
+}
+.widget .widget-head {
+    background: #37a6cd;
+    border: 1px solid #37a6cd;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.6), inset -1px -1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.6),inset -1px -1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.6), inset -1px -1px 1px rgba(0, 0, 0, 0.1);
+    height: 31px;
+    line-height: 31px;
+    position: relative;
+}
+
+.widget.widget-4 .widget-head .heading {
+    text-transform: uppercase;
+    color: #222222;
+    font-family: "Raleway",sans-serif;
+    text-shadow: none;
+    padding: 0;
+    margin: 0;
+    height: 25px;
+    border-bottom: 5px solid #37a6cd;
+}
+
+.widget .widget-head .heading {
+    margin: 0;
+    color: #fff;
+    font-size: 10pt;
+    height: 31px;
+    line-height: 31px;
+    padding: 0 10px;
+    float: left;
+}
+
+.widget.widget-4 .widget-body {
+    border: none;
+}
+.widget .widget-body {
+    padding: 15px;
 }

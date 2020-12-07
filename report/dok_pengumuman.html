@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TRAINPLAN - Informasi Kereta Api</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BOOTSTRAP STYLES-->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FONTAWESOME STYLES-->
+    <link href="../assets/css/font-awesome.css" rel="stylesheet"/>
+    <!-- CUSTOM STYLES-->
+    <link href="../assets/css/custom.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../assets/img/icon.ico">
+</head>
+<body id="penetapan">
+	<div class="penetapan">
+		<div id="wrapper">
+			<div id="content">
+				<div id="separator"></div>
+				<div class="inner">
+					<h3 style="font-weight: 700;">Dokumen Pengumuman</h3>
+                    <p>Daftar Dokumen Pengumuman Terbaru (WAM / PPK)</p>
+                    <br>
+                    <br>
+                    <div class="table">
+                        <table class="table table-condensed table-striped table-bordered table-hover table-primary" id="dataTables-example">
+                            <thead class="t-penetapan">
+                                <tr role="row">
+                                    <th style="width: 11px;" class="hide">Id</th>
+                                    <th style="width: 89px;">Nomor</th>
+                                    <th style="width: 113px;">Oleh</th>
+                                    <th style="width: 77px;">Bulan</th>
+                                    <th style="width: 876px;">Keterangan</th>
+                                    <th style="width: 68px;" class="center">Detail</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="hide">948283</td>
+                                    <td>OTR/41</td>
+                                    <td>Kantor Pusat</td>
+                                    <td>Dec 2020</td>
+                                    <td>Pengaturan Jalan Ka Penumpang Desember 2020</td>
+                                    <td class="center">
+                                        <a href="dok_contain/948283.html" class="btn btn-primary detail-dok">Lihat</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JQUERY SCRIPTS -->
+    <script src="../assets/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SsCRIPTS -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="../assets/js/jquery.metisMenu.js"></script>
+     <!-- DATA TABLE SCRIPTS -->
+    <script src="../assets/js/dataTables/jquery.dataTables.js"></script>
+    <script src="../assets/js/dataTables/dataTables.bootstrap.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#dataTables-example').dataTable( {
+                "info": true,
+            });
+        });
+        function idleLogout() {
+            var t;
+            // window.onmousemove = resetTimer;
+            // window.onmousedown = resetTimer;  // catches touchscreen presses as well      
+            // window.ontouchstart = resetTimer; // catches touchscreen swipes as well 
+            window.onclick = resetTimer;      // catches touchpad clicks as well
+            window.onkeypress = resetTimer;   
+            window.addEventListener('scroll', resetTimer, true); // improved; see comments
+
+            function yourFunction() {
+                // your function for too long inactivity goes here
+                window.location.href = '../logout.html';
+            }
+
+            function resetTimer() {
+                clearTimeout(t);
+                t = setTimeout(yourFunction, 600000);  // time is in milliseconds
+            }
+        }
+        idleLogout();
+    </script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="../assets/js/custom.js"></script>
+</body>
+</html>
