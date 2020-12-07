@@ -376,8 +376,8 @@ text {
     line-height: 25px;
 }
 .widget .widget-head {
-    background: #37a6cd;
-    border: 1px solid #37a6cd;
+    background: #E9E9E9;
+    border: 1px solid #D1D2D3;
     color: #fff;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
     box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.6), inset -1px -1px 1px rgba(0, 0, 0, 0.1);
@@ -390,7 +390,7 @@ text {
 
 .widget.widget-4 .widget-head .heading {
     text-transform: uppercase;
-    color: #222222;
+    color: #555555;
     font-family: "Raleway",sans-serif;
     text-shadow: none;
     padding: 0;
@@ -401,7 +401,7 @@ text {
 
 .widget .widget-head .heading {
     margin: 0;
-    color: #fff;
+    color: #555555;
     font-size: 10pt;
     height: 31px;
     line-height: 31px;
@@ -414,4 +414,9 @@ text {
 }
 .widget .widget-body {
     padding: 15px;
+}
+
+.heading {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700px;
 }
