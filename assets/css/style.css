@@ -420,3 +420,17 @@ text {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700px;
 }
+
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+.hidden-tablet {
+    display: none!important;
+}
+
+@media (max-width: 767px) {
+.hidden-phone {
+    display: none!important;
+}
