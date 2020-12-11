@@ -28,7 +28,7 @@
                     <br>
                     <br>
                     <div class="table">
-                        <table class="table table-condensed table-striped table-bordered table-hover table-primary" id="dataTables-example">
+                        <table class="table table-condensed table-striped table-bordered table-hover table-primary" id="pengumuman">
                             <thead class="t-penetapan">
                                 <tr role="row">
                                     <th style="width: 11px;" class="hide">Id</th>
@@ -41,16 +41,6 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="hide">948283</td>
-                                    <td>OTR/41</td>
-                                    <td>Kantor Pusat</td>
-                                    <td>Dec 2020</td>
-                                    <td>Pengaturan Jalan Ka Penumpang Desember 2020</td>
-                                    <td class="center">
-                                        <a href="dok_contain/948283.html" class="btn btn-primary detail-dok">Lihat</a>
-                                    </td>
-                                </tr>
-                                <tr>
                                     <td class="hide">948363</td>
                                     <td>OTR/46</td>
                                     <td>Kantor Pusat</td>
@@ -58,6 +48,16 @@
                                     <td>Pengaturan Jalan Ka Penumpang Desember 2020</td>
                                     <td class="center">
                                         <a href="dok_contain/948363.html" class="btn btn-primary detail-dok">Lihat</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="hide">948283</td>
+                                    <td>OTR/41</td>
+                                    <td>Kantor Pusat</td>
+                                    <td>Dec 2020</td>
+                                    <td>Pengaturan Jalan Ka Penumpang Desember 2020</td>
+                                    <td class="center">
+                                        <a href="dok_contain/948283.html" class="btn btn-primary detail-dok">Lihat</a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -77,11 +77,12 @@
     <script src="../assets/js/dataTables/jquery.dataTables.js"></script>
     <script src="../assets/js/dataTables/dataTables.bootstrap.js"></script>
     <script>
-        $(document).ready(function () {
-            $('#dataTables-example').dataTable( {
+        $(document).ready(function() {
+            $('#pengumuman').DataTable( {
+                "ordering": false,
                 "info": true,
-            });
-        });
+            } );
+        } );
         function idleLogout() {
             var t;
             // window.onmousemove = resetTimer;
