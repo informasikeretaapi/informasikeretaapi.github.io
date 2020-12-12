@@ -12,7 +12,7 @@
     <link href="../../assets/css/custom.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
     <!-- GOOGLE FONTS-->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <!-- Icon -->
     <link rel="shortcut icon" href="../../assets/img/icon.ico">
 </head>
@@ -21,18 +21,18 @@
         <div id="wrapper">
             <div id="content">
                 <div id="separator"></div>
-                <h3 class="heading">Detail Dokumen Pengumuman</h3>
+                <h3 class="heading" style="margin-left: 20px">Detail Dokumen Pengumuman</h3>
                 <br>
                 <div id="separator"></div>
                 <div class="well" style="padding-bottom: 20px; margin: 0;">
                     <div class="row-fluid">
                         <div class="span6">
                             <div class="btn-group btn-group-vertical block">
-                                <a class="btn btn-icon btn-default btn-block count"> <span>OTR/</span>Nomor</a>
-                                <a class="btn btn-icon btn-default btn-block count"> <span> 2020</span>Bulan</a>
-                                <a class="btn btn-icon btn-default btn-block count"> <span>0</span>Total KA</a>
-                                <a class="btn btn-icon btn-default btn-block count"> <span>0</span>Total Jalan</a>
-                                <a class="btn btn-icon btn-default btn-block count"> <span>0</span>Total Batal</a>
+                                <a class="btn btn-icon btn-default btn-block count"> <span></span>Nomor</a>
+                                <a class="btn btn-icon btn-default btn-block count"> <span></span>Bulan</a>
+                                <a class="btn btn-icon btn-default btn-block count"> <span></span>Total KA</a>
+                                <a class="btn btn-icon btn-default btn-block count"> <span></span>Total Jalan</a>
+                                <a class="btn btn-icon btn-default btn-block count"> <span></span>Total Batal</a>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                     </div>
                     <div class="accordion-group">
                         <button class="btn btn-primary btn-collapse" type="button" data-toggle="collapse" data-target="#collapseTrainplan" aria-expanded="true" aria-controls="collapseTrainplan" style="width: 100%; text-align: left;">
-                        <text>[Click to View] </text>
+                        <text>[Click to View] OTR. - </text>
                     </button>
                     <br>
                     <div class="collapse" id="collapseTrainplan">
@@ -62,7 +62,63 @@
                         </div>
                         <br>
                         <div class="widget widget-gray widget-body-white">
-        
+                            <div class="widget-head">
+                                <h4 class="heading">Perjalanan KA Terkait</h4>
+                            </div>
+                            <div class="widget-body" style="padding: 10px 0 0;">
+                                <table id="log" class="table table-bordered table-condensed table-striped table-vertical-center checkboxs js-table-sortable ui-sortable">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 1%;" class="center">No.</th>
+                                            <th class="center">Nomor</th>
+                                            <th class="center">Nama</th>
+                                            <th class="center">Relasi</th>
+                                            <th style="width: 1%;" class="center hidden-tablet hidden-phone">Km</th>
+                                            <th style="width: 70px;" class="center">Jalan</th>
+                                            <th style="width: 250px;" class="center">Tanggal</th>
+                                        </tr>
+                                    </thead>
+                            <tbody>
+                                                                                <tr>
+                                            <td class="center">1</td>
+                                            <td><strong>103G</strong></td>
+                                            <td>Mutiara Selatan</td>
+                                            <td class="center">SGU-BD</td>
+                                            <td class="center hidden-tablet hidden-phone"><h6>696.635</h6></td>
+                                            <td class="center"><span class="label label-block label-success">JALAN</span></td>
+                                            <td style="width: 250px;" class="center span3">2020-12-27</td>
+                                        </tr>
+                                                            <tr>
+                                            <td class="center">2</td>
+                                            <td><strong>104G</strong></td>
+                                            <td>Mutiara Selatan</td>
+                                            <td class="center">BD-SGU</td>
+                                            <td class="center hidden-tablet hidden-phone"><h6>696.392</h6></td>
+                                            <td class="center"><span class="label label-block label-success">JALAN</span></td>
+                                            <td style="width: 250px;" class="center span3">2020-12-27</td>
+                                        </tr>
+                                                            <tr>
+                                            <td class="center">3</td>
+                                            <td><strong>137B</strong></td>
+                                            <td>Senja Utama Solo</td>
+                                            <td class="center">SLO-PSE</td>
+                                            <td class="center hidden-tablet hidden-phone"><h6>569.968</h6></td>
+                                            <td class="center"><span class="label label-block label-success">JALAN</span></td>
+                                            <td style="width: 250px;" class="center span3">2020-12-12, 2020-12-13</td>
+                                        </tr>
+                                                            <tr>
+                                            <td class="center">4</td>
+                                            <td><strong>140A</strong></td>
+                                            <td>Mataram</td>
+                                            <td class="center">PSE-SLO</td>
+                                            <td class="center hidden-tablet hidden-phone"><h6>569.962</h6></td>
+                                            <td class="center"><span class="label label-block label-success">JALAN</span></td>
+                                            <td style="width: 250px;" class="center span3">2020-12-12, 2020-12-13</td>
+                                        </tr>
+                                                </tbody>
+                                </table>
+                            </div>  
+                        </div>
                     </div>
                 </div>  
             </div>
