@@ -27,9 +27,9 @@
     </div>
     <div class="container">
       <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="username" required>
+      <input type="text" placeholder="Enter Username" name="usr" required>
       <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="password" required>
+      <input type="password" placeholder="Enter Password" name="pwd" required>
       <button type="submit"><b>Login</b></button>
       <!-- <input type="checkbox" checked="checked"> Remember me -->
     </div>
@@ -41,13 +41,13 @@
 </div>
 <script type="text/javascript">
   function validasi(){
-    var username = document.forms["myForm"]["username"].value;
-    var password = document.forms["myForm"]["password"].value;
-    if( username == "informasi.ka" && password == "StdPwdIKA2020"){
+    var usr = document.forms["myForm"]["usr"].value;
+    var pwd = document.forms["myForm"]["pwd"].value;
+    if( usr == "informasi.ka" && pwd == "StdPwdIKA2020"){
       alert("Informasi yang disampaikan hanya ditujukan kepada penerima sebagaimana dimaksud pada tujuan informasi tersebut. Kalian tidak diperkenankan untuk memanfaatkan, menyebarkan, mendistribusikan, dan menggandakan informasi tersebut. Dan tidak serta merta mencerminkan pandangan IKA.");
       return true;
     }
-    else if(username =="" || password ==""){
+    else if(usr =="" || pwd ==""){
       alert("Masukkan username dan password Anda");
       return false;
     }
